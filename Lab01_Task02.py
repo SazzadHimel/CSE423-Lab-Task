@@ -61,12 +61,9 @@ def mouseListener(button, state, x, y):
         else:
             blink = True
         
-    if button==GLUT_RIGHT_BUTTON and state == GLUT_DOWN and not paused:
-        a, b = convert_coordinate(x,y)
-
-        for p in range(random.randint(2, 20)):
-            points.append(Point(a, b))
-
+    if button == GLUT_RIGHT_BUTTON and state == GLUT_DOWN and not paused:
+        a, b = convert_coordinate(x, y)
+        points.append(Point(a, b))
         glutPostRedisplay()
 
     glutPostRedisplay()

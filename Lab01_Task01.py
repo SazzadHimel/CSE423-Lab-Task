@@ -17,7 +17,7 @@ def drawHome():
     
     glBegin(GL_LINES)
     # x-axis Wall
-    glVertex2f(100, 200)
+    glVertex2f(110, 200)
     glVertex2f(500, 200)
     glVertex2f(200, 500)
     glVertex2f(500, 500)
@@ -174,7 +174,7 @@ glutSpecialFunc(special_key_pressed)
 glutSpecialUpFunc(special_key_released)
 init()
 
-for i in range(150):
+for i in range(200):
     x = random.randint(0, 1200)
     y = random.randint(0, 1200)
     drop.append([x, y])
